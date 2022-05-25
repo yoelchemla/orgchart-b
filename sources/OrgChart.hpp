@@ -216,7 +216,7 @@ class Iterator{
     
     Iterator begin_level_order(){
         mikreKatze();
-        it.clear();
+        it.clear();//empty the vector
         checkSituation('a'); //level order
         return Iterator(&it[0]); //the first place
     }
@@ -228,14 +228,14 @@ class Iterator{
    
     Iterator begin_reverse_order(){
         mikreKatze();
-        it.clear();
+        it.clear();//empty the vector
         checkSituation('b'); //reversr level order
         return Iterator(&it[0]);
     }
     
     Iterator begin_preorder(){
        mikreKatze();
-        it.clear();
+        it.clear();//empty the vector
         checkSituation('c'); //preorder 
         return Iterator(&this->it[0]);
     }
@@ -253,7 +253,7 @@ class Iterator{
     
     Iterator begin(){
         mikreKatze();
-        it.clear();
+        it.clear();//empty the vector
         checkSituation('a');
         return Iterator(&it[0]);
     }
@@ -266,7 +266,7 @@ class Iterator{
     friend ostream &operator <<(ostream &out, OrgChart &src){ 
         if(src.root == NULL){ return out;} //default
         
-        //2 queue:
+        //create 2 queue:
         queue<Node*> queue4;
         queue<string> queue4_1;
 

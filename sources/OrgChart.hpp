@@ -277,14 +277,14 @@ class Iterator{
         while (!queue4.empty()){
             Node* ans = queue4.front();
             queue4.pop();
-            string nameOne = queue4_1.front();
+            string nameOne = queue4_1.front();//the first name
             queue4_1.pop();
            
             for(size_t i=0; i<ans->theSize(); i++){
                 queue4.push(ans->get_child()[i]);
-                string nameTwo = nameOne + " "+ ans->get_child()[i]->getName();
+                string nameTwo = nameOne + " "+ ans->get_child()[i]->getName(); //the second name
                 out<<nameTwo<<endl;
-                queue4_1 .push(nameTwo); //entrance
+                queue4_1 .push(nameTwo); //entrance the second name to the queue of strings
             }
         }
         return out;   

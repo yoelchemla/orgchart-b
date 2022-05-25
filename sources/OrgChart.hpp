@@ -254,7 +254,7 @@ class Iterator{
     Iterator begin(){
         mikreKatze();
         it.clear();//empty the vector
-        checkSituation('a');
+        checkSituation('a'); 
         return Iterator(&it[0]);
     }
 
@@ -271,14 +271,14 @@ class Iterator{
         queue<string> queue4_1;
 
         queue4.push(src.root);
-        queue4_1.push(src.root->getName());
+        queue4_1.push(src.root->getName()); //his name
         out<< src.root->getName()<< endl;
 
         while (!queue4.empty()){
             Node* ans = queue4.front();
-            queue4.pop();
+            queue4.pop(); //dequeue
             string nameOne = queue4_1.front();//the first name
-            queue4_1.pop();
+            queue4_1.pop(); //dequeue
            
             for(size_t i=0; i<ans->theSize(); i++){
                 queue4.push(ans->get_child()[i]);

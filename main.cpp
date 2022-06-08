@@ -2,13 +2,13 @@
 using namespace std;
 using namespace ariel;
 
-// 							ariel
-// 						/	  |	   \
-// 			  	 rakaz1   rakaz2  erelSegal
-// 					|				/		\
-// 		  		lecturer1		mor			haim
-//   						/	 |	 \
-//						liron	or	ivgeny	
+// 							   ariel 
+// 					     /	  	     |	          \
+// 			  		 rakaz1           rakaz2  	   erelSegal
+// 				           |				/		\
+// 		  		      lecturer1		             mor		haim
+//   							      /	      |	     \
+//							liron        or       ivgeny	
 // 
 //  
 	int main() {
